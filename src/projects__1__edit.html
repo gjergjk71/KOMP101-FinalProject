@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/header.css">
+        <link rel="stylesheet" href="/static/main.css">
+        <link rel="stylesheet" href="/static/footer.css">
+    </head>
+    <script>
+        const project_id = window.location.pathname.split("__")[1]
+        const el_id = "project__" + project_id
+        const body = document.createElement("body");
+        body.innerHTML = localStorage.getItem("projects__table");
+        const tr = body.querySelector("#" + el_id)
+        window.data = {
+            name: tr.querySelector("td:nth-child(2)").innerHTML,
+            platform: tr.querySelector("td:nth-child(3)").innerHTML,
+        }
+    </script>
+    <body id="index_page">
+        <header>
+            <img id="header__img" src="/static/imgs/logo.png" />
+        </header>
+        <section id="single_project_section">
+            <form id="main__edit__form">
+                <div style="margin-bottom: 30px;" id="form__errors">
+
+                </div>
+                <div class="form__labelinput">
+                    <div class="form__label"><span>Name:</span></div>
+                    <input id="projects__name" class="form__input" placeholder="Name" />
+                </div>
+                <div class="form__labelinput">
+                    <div class="form__label"><span>Web:</span></div>
+                    <select id="projects__web" class="form__input" id="main__web">
+                        <option value="Web">Web</option>
+                        <option value="Mobile">Mobile</option>
+                    </select>
+
+                </div>
+                    <button id="form__edit__button">
+                        <div>Update</div>
+                    </button>
+            </form>
+
+        </section>
+        <footer>
+            <div>
+                <img src="/static/imgs/logo.png" />
+                <div>ManyCongrats LLC</div>
+                <div>Lorem Address, Wall Street</div>
+            </div>
+            <div>
+                <div>Made with ❤ by Gjergj</div>
+            </div>
+        </footer>
+    </body>
+    <script>
+        document.querySelector("#projects__name").value = window.data.name;
+        document.querySelector("#projects__web").value = window.data.platform;
+    </script>
+    <script type="text/javascript" src="/static/scripts/main.js"></script>  
+</html>

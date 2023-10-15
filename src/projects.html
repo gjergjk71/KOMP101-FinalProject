@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/header.css">
+        <link rel="stylesheet" href="/static/main.css">
+        <link rel="stylesheet" href="/static/footer.css">
+
+    </head>
+    <body id="projects_page">
+        <header>
+            <img id="header__img" src="/static/imgs/logo.png" />
+        </header>
+        <section id="projects">
+            <div>
+                <div>Projects</div>
+                <button id="add_project">
+                    <div>Add</div>
+                </button>
+
+            </div>
+            <table>
+
+            </table>
+            <div id="error"></div>
+        </section>
+        <footer>
+            <div>
+                <img src="/static/imgs/logo.png" />
+                <div>ManyCongrats LLC</div>
+                <div>Lorem Address, Wall Street</div>
+            </div>
+            <div>
+                <div>Made with ❤ by Gjergj</div>
+            </div>
+        </footer>
+    </body>
+    <script>
+        const html = localStorage.getItem("projects__table")
+        document.body.querySelector("table").outerHTML = html || `
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Platform</th>
+                  <th>Actions</th>
+                </tr>
+                <tr id="project__1">
+                  <td class="project__id_link" style="cursor: pointer">#1</td>
+                  <td>ManyCongrats</td>
+                  <td>Web</td>
+                  <td><button class="project__delete__button">Delete</button></td>
+                </tr>
+                <tr id="project__2">
+                    <td class="project__id_link" style="cursor: pointer">#2</td>
+                    <td>ManyCongrats</td>
+                    <td>Mobile</td>
+                    <td><button class="project__delete__button">Delete</button></td>
+                </tr>
+
+        `
+    </script>
+    <script type="text/javascript" src="/static/scripts/main.js"></script>  
+</html>

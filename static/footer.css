@@ -1,0 +1,44 @@
+footer {
+    /* width: 1440px;  */
+    height: 220px; 
+    background: #FCF7F7;
+    display: flex;
+    width: 99.5%;
+}
+
+#index_page > footer {
+    position: absolute;
+    bottom: 0;
+}
+
+footer > div:first-child > img {
+    width: 117px; 
+    height: 65px
+}
+footer > div:first-child > div:nth-child(2) {
+    color: black; 
+    font-size: 25px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+footer > div:first-child > div:nth-child(3) {
+    width: 211px; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+footer > div:nth-child(2) > div {
+    width: 211px; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    margin-left: 35vw;
+    margin-top: 2vh;
+}

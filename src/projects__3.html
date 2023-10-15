@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/header.css">
+        <link rel="stylesheet" href="/static/main.css">
+        <link rel="stylesheet" href="/static/footer.css">
+    </head>
+    <script>
+        const project_id = window.location.pathname.split("__")[1]
+        const el_id = "project__" + project_id
+        const body = document.createElement("body");
+        body.innerHTML = localStorage.getItem("projects__table");
+        const tr = body.querySelector("#" + el_id)
+        window.data = {
+            name: tr.querySelector("td:nth-child(2)").innerHTML,
+            platform: tr.querySelector("td:nth-child(3)").innerHTML,
+        }
+    </script>
+    <body id="index_page">
+        <header>
+            <img id="header__img" src="/static/imgs/logo.png" />
+        </header>
+        <section id="single_project_section">
+            <div id="projects">
+                <div class="projects__project">Project</div>
+                <div class="projects__id">ID: #1</div>
+                <div class="projects__name">Name: ManyCongrats</div>
+                <div class="projects__platform">Platform: Web</div>
+            </div>
+            <div id="projects__statistics">
+                <div style="width: 412px; height: 59px; background: #21B8F8">
+                    <div class="statistics">Statistics</div>
+                </div>
+                <div style="margin-top: 25px; display: flex;">
+                    <div style="width: 180px; height: 59px; background: #21B8F8">
+                        <div class="statistics">Total Usage</div>
+                    </div>
+                    <div style="width: 180px; height: 59px; background: #21B8F8; margin-left: 52px;">
+                        <div class="statistics">56%</div>
+                    </div>
+                </div>
+                <div style="margin-top: 25px; display: flex;">
+                    <div style="width: 180px; height: 59px; background: #21B8F8">
+                        <div class="statistics">API calls</div>
+                    </div>
+                    <div style="width: 180px; height: 59px; background: #21B8F8; margin-left: 52px;">
+                        <div class="statistics">3521</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <img src="/static/imgs/logo.png" />
+                <div>ManyCongrats LLC</div>
+                <div>Lorem Address, Wall Street</div>
+            </div>
+            <div>
+                <div>Made with ❤ by Gjergj</div>
+            </div>
+        </footer>
+    </body>
+    <script>
+        document.querySelector(".projects__name").innerHTML = "Name: " + window.data.name;
+        document.querySelector(".projects__platform").innerHTML = "Platform: " + window.data.platform;
+    </script>
+    <script type="text/javascript" src="/static/scripts/main.js"></script>  
+</html>

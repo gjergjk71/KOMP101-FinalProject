@@ -1,0 +1,237 @@
+
+/* start: index page CSS */
+#header__img {
+    width: 360px; 
+    height: 200px
+}
+
+#section__main {
+    /* center horizontally and  vertically */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* end */
+    
+    width: 729px; 
+    height: 345px; 
+    background: #189BD2;
+}
+
+#main__title {
+    color: white; 
+    font-size: 25px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 15px;
+}
+
+form > div {
+    /* center horizontally */
+    width:100%;
+    display: flex;
+    justify-content: center;
+    /* end */
+
+    margin-top: 25px !important;    
+}
+
+form > button {
+    margin-top: 25px !important;    
+    margin-left: 14.5rem;
+}
+
+.form__label {
+    /* position: relative; */
+    width: 100px;
+    align-items: right;
+    font-size: 25px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    display: inline;
+}
+
+.form__label > span {
+    float: right;
+}
+
+.form__input {
+    color: white; 
+    font-size: 25px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    background: #D9D9D9;
+    margin-left: 15px;
+    width: 30%;
+    /* float: right; */
+}
+
+button {
+    width: 302px; 
+    height: 46px; 
+    background: #FBAE44;
+}
+
+button > div {
+    color: white; 
+    font-size: 25px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.error_div {
+    width: 302px; 
+    height: 46px; 
+    background: #E22029
+}
+.error_div > div {
+    color: white; 
+    font-size: 25px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    margin-top: 7px;
+    margin-left: 2.1vw;
+}
+.success_div {
+    width: 302px; 
+    height: 46px; 
+    background: #8eb73f
+}
+.success_div > div {
+    color: white; 
+    font-size: 25px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    margin-top: 7px;
+    margin-left: 2.1vw;
+}
+/* end: index page CSS */
+/* start: projects page CSS */
+
+table {
+    /* width: 676px; height: 566px;  */
+    background: #21B8F8;
+    
+}
+
+table th, tr {
+    color: white; 
+    font-size: 25px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+table th:first-child,tr:first-child {
+    margin-left: initial !important;
+}
+table th, tr {
+    margin-left: 15px;
+}
+
+section#projects {
+    margin-bottom: 10vh;
+}
+
+section#projects > div:first-child > div:first-child {
+    color: black; 
+    font-size: 25px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    display: inline;
+}
+
+section#projects > div:first-child > button {
+    float: right;
+}
+
+.modal__overlay {
+    width: 1440px; 
+    height: 1024px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: rgb(251, 174, 68, .1);
+}
+
+.modal__container {
+    opacity: 1;
+    width: 472px; 
+    height: 345px; 
+    background: rgb(24, 155, 210, 1);
+
+    /* center horizontally and  vertically */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* end */
+}
+
+h1 {
+    color: black; font-size: 25px; font-family: Roboto; font-weight: 400; word-wrap: break-word;
+}
+
+.modal__container h1 {
+    text-align: center;
+}
+
+#projects_page button#form__create_buton {
+    margin-left: 8vh;
+}
+/* end: projects page CSS */
+/* start: single project page CSS */
+
+.projects__project, .projects__id, .projects__name, .projects__platform {
+    color: black; 
+    font-size: 25px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+#projects > div {
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+#projects {
+    width: 500px;
+}
+
+.statistics {
+    color: black; 
+    font-size: 35px; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    text-align: center;
+}
+
+#projects__statistics {
+    width: 500px;
+}
+
+#single_project_section {
+    display: flex;
+}
+table {
+    margin-top: 50px;
+    margin-left: 50px;
+}
